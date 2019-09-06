@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header/Header'; /*HUOM! Tiedoston nimen perään ei tarvitse laittaa .js! */ 
+import Main from './Main/Main';
+import Footer from './Footer/Footer';
 
-function App() {
+// Huom! Komponentti Header kirjoitetaan funktion sisään kuten alla:
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header title="This is my header from props" text="Wow, now we actually can make it!"/>
+      <Main text="This is the main area" button="Click me!"/>
+      <Footer />
     </div>
   );
 }

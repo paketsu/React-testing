@@ -1,0 +1,12 @@
+.main {
+    height: 80vh;
+    text-align: center;
+}
+
+button {
+    background-color: blue;
+    border: solid 1px blue;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
